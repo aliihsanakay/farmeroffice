@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerOffice.Entities", "FarmerOffice.Entities\FarmerOffice.Entities.csproj", "{31B6B7B0-69DB-4000-8E69-2B91BFDD1705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerOffice.Web", "FarmerOffice.Web\FarmerOffice.Web.csproj", "{A882FBA9-8BF7-4B68-8EA1-3B1B56C037CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31B6B7B0-69DB-4000-8E69-2B91BFDD1705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B6B7B0-69DB-4000-8E69-2B91BFDD1705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B6B7B0-69DB-4000-8E69-2B91BFDD1705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B6B7B0-69DB-4000-8E69-2B91BFDD1705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A882FBA9-8BF7-4B68-8EA1-3B1B56C037CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A882FBA9-8BF7-4B68-8EA1-3B1B56C037CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A882FBA9-8BF7-4B68-8EA1-3B1B56C037CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A882FBA9-8BF7-4B68-8EA1-3B1B56C037CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28322F9A-ADF3-41F8-BC7D-60A170D29137}
+	EndGlobalSection
+EndGlobal
