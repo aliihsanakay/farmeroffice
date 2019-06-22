@@ -3927,4 +3927,9 @@
     <Folder Include="wwwroot\template\vendors\bower_components\pdfmake\libs\FileSaver.js\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\FarmerOffice.Entities\FarmerOffice.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
