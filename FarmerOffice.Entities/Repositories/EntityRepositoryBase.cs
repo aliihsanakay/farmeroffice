@@ -21,12 +21,17 @@ namespace NetSatis.Entities.Repositories
         {
             return context.Set<TEntity>().SingleOrDefault(filter);
         }
-        public void AddOrUpdate(TContext context, TEntity entity)
+        public void Add(TContext context, TEntity entity)
         {
             
                 context.Set<TEntity>().Add(entity);
         }
 
+        public void Update(TContext context, TEntity entity)
+        {
+
+            context.Set<TEntity>().Update(entity);
+        }
         public void Delete(TContext context, Expression<Func<TEntity, bool>> filter)
         {
             context.Set<TEntity>().RemoveRange(context.Set<TEntity>().Where(filter));

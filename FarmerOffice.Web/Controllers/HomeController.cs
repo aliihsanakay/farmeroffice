@@ -16,6 +16,14 @@ namespace FarmerOffice.Web.Controllers
         FarmerOfficeContext _context = new FarmerOfficeContext();
         public IActionResult Index()
         {
+            CompanyDAL companyDAL = new CompanyDAL();
+            var item = companyDAL.GetAll(_context);
+          Company  item1 = item.FirstOrDefault();
+
+            item1.Name = "Ali Update";
+
+            companyDAL.Update(_context,item1);
+            companyDAL.Save(_context);
 
             //CompanyDAL companyDAL = new CompanyDAL();
             //Company company = new Company();

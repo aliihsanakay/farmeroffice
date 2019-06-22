@@ -13,7 +13,7 @@ namespace FarmerOffice.Entities.Tables
         public DateTime? EditDate   { get; set; }
         public int CreateId { get; set; }
         public int? EditId { get; set; }
-        public int Deleted { get; set; }
+        public bool  Deleted { get; set; }
         #endregion
         public BaseClass()
         {
