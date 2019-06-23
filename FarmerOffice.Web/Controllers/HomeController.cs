@@ -8,22 +8,31 @@ using FarmerOffice.Web.Models;
 using FarmerOffice.Entities.Context;
 using FarmerOffice.Entities.Data_Access;
 using FarmerOffice.Entities.Tables;
+using FarmerOffice.Web.Models.Helper;
+using System.Linq.Expressions;
 
 namespace FarmerOffice.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        FarmerOfficeContext _context = new FarmerOfficeContext();
         public IActionResult Index()
         {
             CompanyDAL companyDAL = new CompanyDAL();
             var item = companyDAL.GetAll(_context);
-          Company  item1 = item.FirstOrDefault();
+            //Company  item1 = item.FirstOrDefault();
 
-            item1.Name = "Ali Update";
+            //  item1.Name = "Ali Update";
+            //              companyDAL.Update(_context,item1);
+            //  companyDAL.Save(_context);
 
-            companyDAL.Update(_context,item1);
-            companyDAL.Save(_context);
+
+
+
+            //companyDAL.Delete(_context, x=>x.Id==1);
+            //companyDAL.Save(_context);
+
+
+
 
             //CompanyDAL companyDAL = new CompanyDAL();
             //Company company = new Company();
