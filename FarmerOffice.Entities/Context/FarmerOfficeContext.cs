@@ -11,9 +11,11 @@ namespace FarmerOffice.Entities.Context
     {
         
         public DbSet<Company> FO_COMPANY { get; set; }
+        public DbSet<UnitType> FO_UNIT_TYPE { get; set; }
         protected override void OnModelCreating(ModelBuilder modedlBuilder)
         {
             modedlBuilder.ApplyConfiguration(new CompanyMap());
+            modedlBuilder.ApplyConfiguration(new UnitTypeMap());
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

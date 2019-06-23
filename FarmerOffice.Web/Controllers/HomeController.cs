@@ -17,8 +17,8 @@ namespace FarmerOffice.Web.Controllers
     {
         public IActionResult Index()
         {
-            CompanyDAL companyDAL = new CompanyDAL();
-            var item = companyDAL.GetAll(_context);
+          //  CompanyDAL companyDAL = new CompanyDAL();
+            //var item = companyDAL.GetAll(_context);
             //Company  item1 = item.FirstOrDefault();
 
             //  item1.Name = "Ali Update";
@@ -34,14 +34,16 @@ namespace FarmerOffice.Web.Controllers
 
 
 
-            //CompanyDAL companyDAL = new CompanyDAL();
+            CompanyDAL companyDAL = new CompanyDAL();
             //Company company = new Company();
             //company.Name = "Ali Tarım";
             //company.Code = "C0001";
             //company.City = "Antalya";
             //company.Town = "Demre";
-            //companyDAL.AddOrUpdate(_context,company);
+            //companyDAL.Add(_context, company);
             //companyDAL.Save(_context);
+
+           var item= companyDAL.GetById(2,false);
 
             return View();
         }

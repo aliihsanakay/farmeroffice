@@ -21,9 +21,9 @@ namespace FarmerOffice.Entities.Mapping
             builder.Property(p => p.Name).HasColumnName("NAME");
             builder.Property(p => p.City).HasColumnName("CITY");
             builder.Property(p => p.Town).HasColumnName("TOWN");
-            builder.Property(p => p.CreateDate).HasColumnName("CREATE_DATE");
+            builder.Property(p => p.CreateDate).HasColumnName("CREATEDATE");
             builder.Property(p => p.CreateId).HasColumnName("CREATE_ID");
-            builder.Property(p => p.EditDate).HasColumnName("EDIT_DATE");
+            builder.Property(p => p.EditDate).HasColumnName("EDITDATE");
             builder.Property(p => p.EditId).HasColumnName("EDIT_ID");
             builder.Property(p => p.Deleted).HasColumnName("DELETED");
         }
