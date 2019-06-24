@@ -7,7 +7,7 @@ using System.Text;
 
 namespace FarmerOffice.Entities.Data_Access
 {
-   public class UnitTypeDAL : EntityRepositoryBase<FarmerOfficeContext, UnitType>
+ public  class LicenceTypeDAL : EntityRepositoryBase<FarmerOfficeContext, LicenceType>
     {
     }
 }

@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-namespace NetSatis.Entities.Interfaces
+namespace FarmerOffice.Entities.Interfaces
 {
     public interface IEntityRepository<TContext, TEntity> where TContext : DbContext, new() where TEntity : class, IEntity, new()
     {

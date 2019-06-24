@@ -1,7 +1,7 @@
 ﻿using FarmerOffice.Entities.Context;
 using FarmerOffice.Entities.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using NetSatis.Entities.Interfaces;
+using FarmerOffice.Entities.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,7 +11,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-namespace NetSatis.Entities.Repositories
+namespace FarmerOffice.Entities.Repositories
 {
     public class EntityRepositoryBase<TContext, TEntity> : IEntityRepository<TContext, TEntity>
           where TContext : DbContext, new() where TEntity : class, IEntity, new()
