@@ -1,0 +1,1 @@
+﻿var farmerOfficeApp = angular.module('farmerOfficeApp', []);
