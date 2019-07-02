@@ -10,14 +10,22 @@ using FarmerOffice.Entities.Data_Access;
 using FarmerOffice.Entities.Tables;
 using FarmerOffice.Web.Models.Helper;
 using System.Linq.Expressions;
+using FarmerOffice.Web.Helper;
 
 namespace FarmerOffice.Web.Controllers
 {
     public class HomeController : BaseController
     {
+
+        public List<Company> CurrentCompany
+        {
+            get { return HttpContext.Session.GetObject<List<Company>>("CurrentCompany"); }
+            set { HttpContext.Session.SetObject("CurrentCompany", value); }
+        }
+
         public IActionResult Index()
         {
-          //  CompanyDAL companyDAL = new CompanyDAL();
+            //  CompanyDAL companyDAL = new CompanyDAL();
             //var item = companyDAL.GetAll(_context);
             //Company  item1 = item.FirstOrDefault();
 
@@ -25,7 +33,11 @@ namespace FarmerOffice.Web.Controllers
             //              companyDAL.Update(_context,item1);
             //  companyDAL.Save(_context);
 
-
+            Company itemd = new Company()
+            {
+                Id = 3
+            };
+            CurrentCompany.Add(itemd);
 
 
             //companyDAL.Delete(_context, x=>x.Id==1);
