@@ -19,7 +19,7 @@ namespace FarmerOffice.Entities.Context
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=185.86.15.138;Initial Catalog=fo;User ID=sa;Password=WellDown#1;");
+            optionsBuilder.UseSqlServer();
         }
     }
 }
